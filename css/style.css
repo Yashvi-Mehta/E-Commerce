@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+#filter {
+  background-color: #fff;
+  color: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100vh;
+  z-index: 100;
+  border-right: 2px solid rgba(200, 200, 200, 0.1);
+  transform: translateX(-100%);
+}
+
+#filter #filter-heading {
+  text-align: center;
+}
+
+#filter ul {
+  padding: 0;
+  list-style-type: none;
+  margin: 0;
+}
+
+#filter ul li {
+  border-bottom: 2px solid rgba(200, 200, 200, 0.1);
+  padding: 20px;
+}
+
+#filter ul li:first-of-type {
+  border-top: 2px solid rgba(200, 200, 200, 0.1);
+}
+
+#filter .filter-subheading {
+  border-radius: 5px;
+}
+
+button {
+  border: 2px solid #161414;
+}
+
+button:focus {
+  outline: none;
+}
+
+input[type='text'] {
+  display: block;
+  margin-bottom: 10px;
+  background-color: #fff;
+  border-radius: 15px;
+  height: 30px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 2fr);
+  grid-template-rows: repeat(2, 2fr);
+  gap: 1% 1%;
+  grid-template-areas: '. . . .' '. . . .' '. . . .';
+}
+
+.item {
+  background-color: pink;
+  display: flex;
+  flex-direction: column;
+  padding: 5px 5px;
+}
+
+.item img {
+  height: 100%;
+  width: 100%;
+}
+
+.item .details {
+  position: relative;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', 'sans-serif';
+  margin: 0;
+  transition: transform 0.3s ease;
+}
+
+.toggle-bar.active {
+  background-color: black;
+}
+
+#navigation-menu {
+  background: #000000da;
+  top: 0;
+  width: 100%;
+  transition: all 0.5s;
+  position: relative;
+  display: flex;
+  position: relative;
+}
+
+#navigation-menu #navigation-menu {
+  background: #000000da;
+  top: 0;
+  width: 100%;
+  transition: all 0.5s;
+  position: relative;
+  display: flex;
+  position: relative;
+}
+
+#navigation-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+#navigation-menu li {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#navigation-menu li a {
+  text-decoration: none;
+  padding: 20px;
+  display: inline-block;
+  color: white;
+  transition: all 0.2s;
+  text-transform: uppercase;
+}
+
+#navigation-menu li:hover {
+  background-color: black;
+}
+
+#nav-right {
+  position: absolute;
+  top: 0px;
+  right: 0;
+}
+
+#nav-right ul li a {
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 0;
+}
+
+body.show-filter {
+  transform: translateX(200px);
+  /* This is the width of the #filter . 100% will make it go to right most and leave an empty blank space on the left */
+}
+
+.search-bar {
+  height: 30px;
+  position: absolute;
+  border-radius: 8px;
+  top: 0px;
+  right: 250;
+  transform: translate(-160px, 20px);
+}
+
+#search {
+  width: 250px;
+}
+
+.left-view {
+  position: absolute;
+  top: 20px;
+  right: 0;
+}
+/*# sourceMappingURL=style.css.map */

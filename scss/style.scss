@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+@import 'header_mixins';
+@import 'variables';
+@import 'grid_mixins';
+@import 'filter_mixin';
+
+@include filter-menu;
+@include button-default;
+@include text-default;
+@include grid_layout;
+
+* {
+   box-sizing: border-box;
+}
+
+body {
+   font-family: 'Lato', 'sans-serif';
+   margin: 0;
+   transition: transform 0.3s ease;
+}
+.toggle-bar.active {
+   background-color: darken($primary-text-color, 0.5);
+}
+
+#navigation-menu {
+   background: $primary-color;
+   top: 0;
+   width: 100%;
+   transition: all 0.5s;
+   position: relative;
+   display: flex;
+   position: relative;
+   @include navigation_menu;
+
+   li {
+      &:hover {
+         background-color: darken($primary-text-color, 0.5);
+      }
+   }
+}
+
+#nav-right {
+   position: absolute;
+   top: 0px;
+   right: 0;
+   ul {
+      li {
+         a {
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 0;
+         }
+      }
+   }
+}
+
+body.show-filter {
+   transform: translateX(200px);
+   /* This is the width of the #filter . 100% will make it go to right most and leave an empty blank space on the left */
+}
+
+.search-bar {
+   height: 30px;
+   position: absolute;
+   border-radius: 8px;
+   top: 0px;
+   right: 250;
+   transform: translate(-160px, 20px);
+}
+
+#search {
+   width: 250px;
+}
+
+.left-view {
+   position: absolute;
+   top: 20px;
+   right: 0;
+}

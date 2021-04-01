@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Shopping Website</title>
+      <link rel="stylesheet" href="../css/style.css" />
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+         integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ="
+         crossorigin="anonymous"
+      />
+   </head>
+   <body>
+      <header id="navigation-menu">
+         <div id="nav-left">
+            <ul>
+               <li class="toggle-bar">
+                  <button id="toggle" class="toggle">
+                     <i class="fa fa-bars fa-2x"></i>
+                  </button>
+               </li>
+               <li><a href="#">Home</a></li>
+               <li><a href="#">Shop</a></li>
+               <li><a href="#">Magazine</a></li>
+            </ul>
+         </div>
+         <div id="nav-right">
+            <ul>
+               <li>
+                  <a href="#">
+                     <input type="text" id="search" />
+                     <button class="search-bar">
+                        <i class="fas fa-search"></i>
+                     </button>
+                  </a>
+               </li>
+               <li>
+                  <a href="#"><i class="fas fa-shopping-cart"></i></a>
+               </li>
+               <li><a href="#">LOGIN</a></li>
+            </ul>
+         </div>
+      </header>
+      <nav id="filter">
+         <div>
+            <p id="filter-heading">Filter by</p>
+         </div>
+
+         <ul>
+            <li>
+               <button class="filter-subheading">Collection</button>
+            </li>
+            <li>
+               <button class="filter-subheading">Color</button>
+            </li>
+            <li>
+               <button class="filter-subheading">Category</button>
+            </li>
+            <li>
+               <button class="filter-subheading">Price range</button>
+            </li>
+         </ul>
+      </nav>
+      <main>
+         <div class="grid-container">
+            <div class="item">
+               <div class="item-image">
+                  <img
+                     src="https://i.pinimg.com/originals/04/31/96/0431960cb4edc8c4889faef67289188f.png"
+                     alt="Couch 1"
+                     class="item-photo"
+                  />
+               </div>
+               <div class="details">
+                  <h2 class="item-name">Couch 1</h2>
+                  <h4 class="item-category">lounge</h4>
+
+                  <h5 class="rating">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                  </h5>
+                  <div class="add-to-cart left-view">
+                     <i class="fas fa-cart-plus"></i>
+                  </div>
+                  <h4 class="item-price left-view">$6500</h4>
+               </div>
+            </div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+         </div>
+      </main>
+      <!-- <footer>
+         <div class="page-container">
+            <div class="page-box">1</div>
+            <div class="page-box">2</div>
+            <div class="page-box">3</div>
+            <div class="page-box">4</div>
+         </div>
+      </footer> -->
+      <script src="../js/script.js"></script>
+   </body>
+</html>
