@@ -49,7 +49,7 @@ body {
 #nav-right {
    position: absolute;
    top: 0px;
-   right: 0;
+   right: 0px;
    ul {
       li {
          a {
@@ -85,9 +85,20 @@ body.show-filter {
    right: 0;
 }
 
+.item-price {
+   font-size: 30px;
+}
+.add-to-cart i {
+   font-size: 25px;
+}
+
 .collection-tags {
    display: block;
    @include button-tag;
+}
+.no-result {
+   font-size: large;
+   color: red;
 }
 
 footer {
