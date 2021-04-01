@@ -1,0 +1,16 @@
+@mixin price_range {
+   .price {
+      width: 100%;
+      margin: 0;
+
+      .price-range {
+         margin: 0;
+         padding: 0;
+         width: 100%;
+      }
+      .values {
+         display: flex;
+         justify-content: space-between;
+      }
+   }
+}

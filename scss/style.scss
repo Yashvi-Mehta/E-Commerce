@@ -1,14 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 
-@import 'header_mixins';
+@import 'header_mixin';
 @import 'variables';
-@import 'grid_mixins';
+@import 'grid_mixin';
 @import 'filter_mixin';
+@import 'accordion_mixin';
+@import 'range_mixin';
+@import 'buttontags_mixin';
+@import 'pagination';
 
 @include filter-menu;
 @include button-default;
 @include text-default;
 @include grid_layout;
+@include accordion;
+@include price_range;
 
 * {
    box-sizing: border-box;
@@ -56,7 +62,7 @@ body {
 }
 
 body.show-filter {
-   transform: translateX(200px);
+   transform: translateX(250px);
    /* This is the width of the #filter . 100% will make it go to right most and leave an empty blank space on the left */
 }
 
@@ -77,4 +83,14 @@ body.show-filter {
    position: absolute;
    top: 20px;
    right: 0;
+}
+
+.collection-tags {
+   display: block;
+   @include button-tag;
+}
+
+footer {
+   margin: 15px 0;
+   @include pagination;
 }

@@ -5,7 +5,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 200px;
+  width: 250px;
   height: 100vh;
   z-index: 100;
   border-right: 2px solid rgba(200, 200, 200, 0.1);
@@ -52,6 +52,7 @@ input[type='text'] {
 }
 
 .grid-container {
+  max-width: 100%;
   display: grid;
   grid-template-columns: repeat(4, 2fr);
   grid-template-rows: repeat(2, 2fr);
@@ -73,6 +74,48 @@ input[type='text'] {
 
 .item .details {
   position: relative;
+}
+
+.filter-subheading {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active,
+.filter-subheading {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.price {
+  width: 100%;
+  margin: 0;
+}
+
+.price .price-range {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.price .values {
+  display: flex;
+  justify-content: space-between;
 }
 
 * {
@@ -150,7 +193,7 @@ body {
 }
 
 body.show-filter {
-  transform: translateX(200px);
+  transform: translateX(250px);
   /* This is the width of the #filter . 100% will make it go to right most and leave an empty blank space on the left */
 }
 
@@ -171,5 +214,39 @@ body.show-filter {
   position: absolute;
   top: 20px;
   right: 0;
+}
+
+.collection-tags {
+  display: block;
+}
+
+.collection-tags button {
+  border-radius: 10px;
+  background-color: #292929;
+  color: #fff;
+}
+
+footer {
+  margin: 15px 0;
+}
+
+footer .pagination {
+  display: inline-block;
+}
+
+footer .pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+footer .pagination a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+footer .pagination .active {
+  background-color: black;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */
