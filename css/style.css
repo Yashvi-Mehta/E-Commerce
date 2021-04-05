@@ -77,6 +77,16 @@ input[type='text'] {
   position: relative;
 }
 
+.item-name {
+  font-size: 25px;
+  text-decoration: none;
+  color: #000;
+}
+
+.item-category {
+  text-transform: capitalize;
+}
+
 .filter-subheading {
   background-color: #eee;
   color: #444;

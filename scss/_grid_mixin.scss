@@ -26,4 +26,12 @@
          position: relative;
       }
    }
+   .item-name {
+      font-size: 25px;
+      text-decoration: none;
+      color: #000;
+   }
+   .item-category {
+      text-transform: capitalize;
+   }
 }

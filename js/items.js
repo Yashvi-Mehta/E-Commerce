@@ -3,6 +3,8 @@ const search = document.querySelector('#search');
 const searchbtn = document.querySelector('.search-bar');
 const footer = document.querySelector('.pagination');
 
+const BaseUrl = 'http://localhost:3000/items';
+
 searchbtn.addEventListener('click', () => {
    if (search.value.trim() == '') {
       console.log('no value');
@@ -14,7 +16,7 @@ searchbtn.addEventListener('click', () => {
 
 function init(term = '') {
    container.innerHTML = '';
-   fetch(`http://localhost:3000/items${term}`)
+   fetch(`${BaseUrl}${term}`)
       .then((res) => res.json())
       .then((data) => {
          if (data.length == 0) {
@@ -22,10 +24,16 @@ function init(term = '') {
                '<div class="no-result">Sorry, we could not find any results</div>';
             footer.style.display = 'none';
          } else {
-            container.innerHTML = data
-               .map(
-                  (data) =>
-                     `<div class="item">
+            mapItems(data);
+         }
+      });
+}
+
+function mapItems(data) {
+   container.innerHTML = data
+      .map(
+         (data) =>
+            `<div class="item" >
                 <div class="item-image">
                    <img
                       src=${data.img_url}
@@ -33,9 +41,14 @@ function init(term = '') {
                       class="item-photo"
                    />
                 </div>
-                <div class="details">
-                   <h2 class="item-name">${data.title}</h2>
-                   <h4 class="item-category" >${data.category}</h4>
+                <div class="details" >
+                   <a href="detail.html" class="item-name" data-id=${data.id}>${
+               data.title
+            }</a>
+                   <h4 class="item-category" >${data.category.replace(
+                      /-/g,
+                      ' '
+                   )}</h4>
 
                    <h5 class="rating">
                    ${
@@ -52,10 +65,9 @@ function init(term = '') {
                    <h4 class="item-price left-view">${data.price}</h4>
                 </div>
              </div>`
-               )
+      )
 
-               .join('');
-         }
-      });
+      .join('');
 }
+
 init();
