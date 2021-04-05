@@ -4,7 +4,12 @@ const searchbtn = document.querySelector('.search-bar');
 const footer = document.querySelector('.pagination');
 
 searchbtn.addEventListener('click', () => {
-   init(`?title=${search.value}`);
+   if (search.value.trim() == '') {
+      console.log('no value');
+      init();
+   } else {
+      init(`?title=${search.value}`);
+   }
 });
 
 function init(term = '') {
@@ -30,7 +35,7 @@ function init(term = '') {
                 </div>
                 <div class="details">
                    <h2 class="item-name">${data.title}</h2>
-                   <h4 class="item-category">${data.category}</h4>
+                   <h4 class="item-category" >${data.category}</h4>
 
                    <h5 class="rating">
                    ${

@@ -101,6 +101,49 @@
          "color": "gold"
       }
    ],
-   "comments": [{ "id": 1, "body": "xfcgvhjklhvgct", "postId": 1 }],
-   "profile": { "name": "typicode" }
+   "categories": [
+      {
+         "name": "lounge",
+         "id-list": [1, 2, 3, 4]
+      },
+      {
+         "name": "home-decor",
+         "id-list": [8, 9, 10]
+      },
+      {
+         "name": "backyard",
+         "id-list": [5, 6, 7]
+      }
+   ],
+   "collection": [
+      {
+         "name": "living-room"
+      },
+      {
+         "name": "backyard"
+      },
+      {
+         "name": "home-decor"
+      }
+   ],
+   "color": [
+      {
+         "name": "white"
+      },
+      {
+         "name": "gray"
+      },
+      {
+         "name": "brown"
+      },
+      {
+         "name": "red"
+      },
+      {
+         "name": "gold"
+      },
+      {
+         "name": "blue"
+      }
+   ]
 }

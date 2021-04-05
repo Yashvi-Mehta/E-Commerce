@@ -237,6 +237,7 @@ body.show-filter {
   cursor: pointer;
   font-size: 18px;
   margin: 5px 5px;
+  text-transform: capitalize;
 }
 
 .no-result {
