@@ -8,7 +8,10 @@
          "rating": 1,
          "img_url": "https://i.pinimg.com/originals/04/31/96/0431960cb4edc8c4889faef67289188f.png",
          "collection": "living-room",
-         "color": "white"
+         "color": "white",
+         "desc": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque sapiente quia, suscipit ipsum voluptates id sequi quibusdam aspernatur eveniet itaque iusto animi veniam dolore in provident delectus nesciunt doloremque? Voluptatem!",
+         "color1": "#fed5a4",
+         "color2": "#22dd44"
       },
       {
          "id": 2,
@@ -18,7 +21,10 @@
          "rating": 4,
          "img_url": "https://www.furniture-ex.com/uploads/imagegallery/images/Landing_Banner_1.jpg",
          "collection": "backyard",
-         "color": "gray"
+         "color": "gray",
+         "desc": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque sapiente quia, suscipit ipsum voluptates id sequi quibusdam aspernatur eveniet itaque iusto animi veniam dolore in provident delectus nesciunt doloremque? Voluptatem!",
+         "color1": "#fed5a4",
+         "color2": "#22dd44"
       },
       {
          "id": 3,
@@ -28,7 +34,10 @@
          "rating": 2,
          "img_url": "https://hgtvhome.sndimg.com/content/dam/images/hgtv/fullset/2015/6/11/0/DP_Caitlin-and-Caitlin-white-transitional-living-room-couch_h.jpg.rend.hgtvcom.966.725.suffix/1400994020531.jpeg",
          "collection": "living-room",
-         "color": "brown"
+         "color": "brown",
+         "desc": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque sapiente quia, suscipit ipsum voluptates id sequi quibusdam aspernatur eveniet itaque iusto animi veniam dolore in provident delectus nesciunt doloremque? Voluptatem!",
+         "color1": "#fed5a4",
+         "color2": "#22dd44"
       },
       {
          "id": 4,
@@ -38,7 +47,10 @@
          "rating": 1,
          "img_url": "https://okl.scene7.com/is/image/OKL/091916_sofa_Lead?wid=1000&op_sharpen=1",
          "collection": "Living-room",
-         "color": "blue"
+         "color": "blue",
+         "desc": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque sapiente quia, suscipit ipsum voluptates id sequi quibusdam aspernatur eveniet itaque iusto animi veniam dolore in provident delectus nesciunt doloremque? Voluptatem!",
+         "color1": "#fed5a4",
+         "color2": "#22dd44"
       },
       {
          "id": 5,
@@ -48,7 +60,10 @@
          "rating": 5,
          "img_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT47KR-sdLUh5d_4V2lcFFEhpE7GOKLjBZvKA&usqp=CAU",
          "collection": "living-room",
-         "color": "white"
+         "color": "white",
+         "desc": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque sapiente quia, suscipit ipsum voluptates id sequi quibusdam aspernatur eveniet itaque iusto animi veniam dolore in provident delectus nesciunt doloremque? Voluptatem!",
+         "color1": "#fed5a4",
+         "color2": "#22dd44"
       },
       {
          "id": 6,
@@ -58,7 +73,10 @@
          "rating": 5,
          "img_url": "http://sc01.alicdn.com/kf/HTB1w39kXOjrK1RjSsplq6xHmVXan/224155293/HTB1w39kXOjrK1RjSsplq6xHmVXan.jpg",
          "collection": "backyard",
-         "color": "white"
+         "color": "white",
+         "desc": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque sapiente quia, suscipit ipsum voluptates id sequi quibusdam aspernatur eveniet itaque iusto animi veniam dolore in provident delectus nesciunt doloremque? Voluptatem!",
+         "color1": "#fed5a4",
+         "color2": "#22dd44"
       },
       {
          "id": 7,
@@ -68,7 +86,10 @@
          "rating": 5,
          "img_url": "https://3.imimg.com/data3/FO/RY/MY-1632538/garden-outdoor-furniture-500x500.jpg",
          "collection": "backyard",
-         "color": "brown"
+         "color": "brown",
+         "desc": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque sapiente quia, suscipit ipsum voluptates id sequi quibusdam aspernatur eveniet itaque iusto animi veniam dolore in provident delectus nesciunt doloremque? Voluptatem!",
+         "color1": "#fed5a4",
+         "color2": "#22dd44"
       },
       {
          "id": 8,
@@ -78,7 +99,10 @@
          "rating": 3,
          "img_url": "https://images-na.ssl-images-amazon.com/images/I/61O6qDEasxL._SL1100_.jpg",
          "collection": "home-decor",
-         "color": "red"
+         "color": "red",
+         "desc": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque sapiente quia, suscipit ipsum voluptates id sequi quibusdam aspernatur eveniet itaque iusto animi veniam dolore in provident delectus nesciunt doloremque? Voluptatem!",
+         "color1": "#fed5a4",
+         "color2": "#ad2b2b"
       },
       {
          "id": 9,
@@ -88,7 +112,10 @@
          "rating": 5,
          "img_url": "https://i.pinimg.com/736x/90/e9/dd/90e9ddf921fb625811af3938963e7740.jpg",
          "collection": "home-decor",
-         "color": "gold"
+         "color": "gold",
+         "desc": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque sapiente quia, suscipit ipsum voluptates id sequi quibusdam aspernatur eveniet itaque iusto animi veniam dolore in provident delectus nesciunt doloremque? Voluptatem!",
+         "color1": "#86ad2b",
+         "color2": "#000"
       },
       {
          "id": 10,
@@ -98,7 +125,10 @@
          "rating": 4,
          "img_url": "https://images-na.ssl-images-amazon.com/images/I/51A4XK0a6NL._SY606_.jpg",
          "collection": "home-decor",
-         "color": "gold"
+         "color": "gold",
+         "desc": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque sapiente quia, suscipit ipsum voluptates id sequi quibusdam aspernatur eveniet itaque iusto animi veniam dolore in provident delectus nesciunt doloremque? Voluptatem!",
+         "color1": "#2752a1",
+         "color2": "#1d0527"
       }
    ],
    "categories": [

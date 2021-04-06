@@ -15,7 +15,7 @@ searchbtn.addEventListener('click', () => {
 });
 
 function init(term = '') {
-   container.innerHTML = '';
+   container.innerHTML = '<div></div>';
    fetch(`${BaseUrl}${term}`)
       .then((res) => res.json())
       .then((data) => {
@@ -42,9 +42,9 @@ function mapItems(data) {
                    />
                 </div>
                 <div class="details" >
-                   <a href="detail.html" class="item-name" data-id=${data.id}>${
-               data.title
-            }</a>
+                   <a href="detail.html" onclick='setData(${
+                      data.id
+                   })' class="item-name" data-id=${data.id}>${data.title}</a>
                    <h4 class="item-category" >${data.category.replace(
                       /-/g,
                       ' '
@@ -68,6 +68,10 @@ function mapItems(data) {
       )
 
       .join('');
+}
+
+function setData(id) {
+   localStorage.setItem('data-id', id);
 }
 
 init();

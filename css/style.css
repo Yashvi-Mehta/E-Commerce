@@ -60,7 +60,6 @@ input[type='text'] {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 1% 1%;
-  grid-template-areas: '. . . .' '. . . .' '. . . .';
 }
 
 .item {
@@ -277,5 +276,29 @@ footer .pagination a:hover:not(.active) {
 footer .pagination .active {
   background-color: black;
   color: white;
+}
+
+@media screen and (max-width: 600px) {
+  .item img {
+    height: 200px;
+    width: 200px;
+  }
+  .item-image {
+    height: 200px;
+    width: 200px;
+  }
+  .left-view {
+    position: absolute;
+    top: 20px;
+    right: 0px;
+  }
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2px 2px;
+  }
+  .details {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

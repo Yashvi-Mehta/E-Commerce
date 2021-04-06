@@ -4,6 +4,103 @@
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Detail page</title>
+      <link rel="stylesheet" href="../css/style.css" />
+      <link rel="stylesheet" href="../css/detail_style.css" />
+
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+         integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ="
+         crossorigin="anonymous"
+      />
    </head>
-   <body></body>
+   <body>
+      <header id="navigation-menu">
+         <div id="nav-left">
+            <ul>
+               <li class="toggle-bar">
+                  <button id="toggle" class="toggle">
+                     <i class="fa fa-bars fa-2x"></i>
+                  </button>
+               </li>
+               <li>
+                  <a href="http://127.0.0.1:5500/html%20files/">Home</a>
+               </li>
+               <li><a href="#">Shop</a></li>
+               <li><a href="#">Magazine</a></li>
+            </ul>
+         </div>
+         <div id="nav-right">
+            <ul>
+               <li>
+                  <a href="#">
+                     <input type="text" id="search" />
+                     <button class="search-bar">
+                        <i class="fas fa-search"></i>
+                     </button>
+                  </a>
+               </li>
+               <li>
+                  <a href="#"><i class="fas fa-shopping-cart"></i></a>
+               </li>
+               <li><a href="#">LOGIN</a></li>
+            </ul>
+         </div>
+      </header>
+      <nav id="filter">
+         <div>
+            <p id="filter-heading">Filter by</p>
+         </div>
+
+         <ul>
+            <li class="filter-subheading">
+               <p>Collection</p>
+            </li>
+            <div class="panel">
+               <div class="collection-tags" id="collection"></div>
+            </div>
+            <li class="filter-subheading">
+               <p>Color</p>
+            </li>
+            <div class="panel">
+               <div class="collection-tags" id="color"></div>
+            </div>
+            <li class="filter-subheading">
+               <p>Category</p>
+            </li>
+            <div class="panel">
+               <div class="collection-tags" id="category"></div>
+            </div>
+            <li class="filter-subheading">
+               <p>Price range</p>
+            </li>
+            <div class="panel">
+               <div class="price">
+                  <input
+                     class="price-range"
+                     type="range"
+                     min="200"
+                     max="800"
+                     value="400"
+                     step="1"
+                  />
+                  <div class="values">
+                     <span id="min-value">200</span>
+                     <span id="selected-price">400</span>
+                     <span id="max-value">800</span>
+                  </div>
+               </div>
+            </div>
+         </ul>
+      </nav>
+
+      <main class="detail-container"></main>
+
+      <script src="../js/accordion_filter.js"></script>
+      <script src="../js/filter_menu.js"></script>
+      <script src="../js/price_range.js"></script>
+      <script src="../js/pagination.js"></script>
+      <script src="../js/filter.js"></script>
+      <script src="../js/details.js"></script>
+   </body>
 </html>

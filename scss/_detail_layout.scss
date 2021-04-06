@@ -1,0 +1,100 @@
+@mixin detail_layout {
+   .detail-container {
+      margin-top: 100px;
+      display: flex;
+      flex: 1;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+   }
+   .content-container {
+      flex: 1;
+      padding: 20px;
+      .subheading {
+         font-weight: bold;
+         color: #888888;
+         font-size: 20px;
+      }
+      .name {
+         color: #000000;
+         font-size: 40px;
+      }
+      .details-content {
+         p {
+            padding: 0 200px 0 0;
+            font-family: Arial, Helvetica, sans-serif;
+         }
+      }
+
+      .pricing-container {
+         display: flex;
+         width: 40%;
+         #price-value {
+            font-size: 30px;
+            margin: 0;
+         }
+      }
+      .buy-option {
+         display: flex;
+         height: 50%;
+         margin-top: 35px;
+         justify-content: center;
+         align-items: center;
+         .buy-now {
+            border: 1px solid black;
+            border-radius: 2px;
+            background-color: rgb(26, 51, 97);
+            color: #fff;
+            font-size: 18px;
+            padding: 10px 20px;
+            white-space: nowrap;
+            text-align: center;
+            margin-right: 20px;
+         }
+         p {
+            font-size: 25px;
+         }
+      }
+   }
+   .color-container {
+      .color-option {
+         border-radius: 50%;
+         background-color: rgb(182, 159, 159);
+         height: 25px;
+         width: 25px;
+         border: none;
+      }
+   }
+   .img-container {
+      display: flex;
+      flex: 1;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      height: 100%;
+      img {
+         height: 400px;
+         width: 400px;
+      }
+      .images {
+         display: flex;
+      }
+      .right-arrow {
+         margin-top: 50%;
+         margin-left: 20%;
+         i {
+            font-size: 30px;
+         }
+      }
+   }
+   .extra-images {
+      display: flex;
+      flex: 1;
+      .extra-img {
+         height: 100px;
+         width: 100px;
+         opacity: 0.5;
+         margin: 10px;
+      }
+   }
+}
