@@ -71,7 +71,7 @@ function displayDetails(data) {
                </div>
                <div class="buy-option">
                   <button class="buy-now">Buy Now</button>
-                  <p><i class="fas fa-cart-plus"></i></p>
+                  <p><i class="fas fa-cart-plus" onclick=addToCart(${data.id})></i></p>
                </div>
             </div>
          </div>`
@@ -80,3 +80,9 @@ function displayDetails(data) {
 }
 
 window.onload = getDetails(id);
+function addToCart(id) {
+   items.push(id);
+   console.log(items);
+   localStorage.setItem('added-items', JSON.stringify(items));
+   // var test = JSON.parse(localStorage.getItem('testKey'));
+}

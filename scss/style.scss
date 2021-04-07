@@ -91,6 +91,7 @@ body.show-filter {
 
 .add-to-cart i {
    font-size: 25px;
+   cursor: pointer;
 }
 
 .collection-tags {
@@ -106,6 +107,7 @@ footer {
    margin: 15px 0;
    @include pagination;
 }
+
 @media screen and (max-width: 600px) {
    .item {
       img {

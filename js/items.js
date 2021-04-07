@@ -60,7 +60,9 @@ function mapItems(data) {
                      
                   </h5>
                    <div class="add-to-cart left-view">
-                      <i class="fas fa-cart-plus"></i>
+                      <i class="fas fa-cart-plus" onclick=addToCart(${
+                         data.id
+                      })></i>
                    </div>
                    <h4 class="item-price left-view">${data.price}</h4>
                 </div>
@@ -69,9 +71,14 @@ function mapItems(data) {
 
       .join('');
 }
-
+const items = [];
 function setData(id) {
    localStorage.setItem('data-id', id);
 }
-
+function addToCart(id) {
+   items.push(id);
+   console.log(items);
+   localStorage.setItem('added-items', JSON.stringify(items));
+   // var test = JSON.parse(localStorage.getItem('testKey'));
+}
 init();
