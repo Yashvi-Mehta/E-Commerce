@@ -233,6 +233,7 @@ body.show-filter {
 
 .add-to-cart i {
   font-size: 25px;
+  cursor: pointer;
 }
 
 .collection-tags {
