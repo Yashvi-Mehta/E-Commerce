@@ -3,6 +3,10 @@ const collection_container = document.getElementById('collection');
 const color_container = document.getElementById('color');
 let filter = '';
 
+const price_bar = document.querySelector('.price-range');
+var max = 10;
+var min = 2000;
+
 // display categories in filter
 
 function getCategory() {
@@ -65,6 +69,24 @@ function getColor() {
       });
 }
 
+function getPrice() {
+   // let prices = [];
+   fetch(`http://localhost:3000/items`)
+      .then((res) => res.json())
+      .then((data) => {
+         data.forEach((data) => {
+            if (data.price > max) {
+               max = data.price;
+            }
+            if (data.price < min) {
+               min = data.price;
+            }
+         });
+      });
+   setTimeout(() => {
+      console.log(max, min);
+   }, 500);
+}
 // filter items based on the selected filter tag
 function filterItems(option, data) {
    switch (option) {
@@ -94,3 +116,4 @@ function filterItems(option, data) {
 getCategory();
 getColor();
 getCollection();
+getPrice();
